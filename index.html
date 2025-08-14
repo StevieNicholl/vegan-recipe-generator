@@ -13,19 +13,22 @@
         <h1>Vegan Recipe Generator</h1>
       </header>
       <main>
-        <form id="input-form">
-          <input
-            type="text"
-            name=""
-            id="input-ing"
-            placeholder="Enter an ingredient"
-            autofocus
-            required
-            class="input-text"
-          />
-          <input type="submit" value="Submit" class="input-button" />
-        </form>
-        <div id="recipe-text"></div>
+        <div class="form-container">
+          <form id="input-form">
+            <input
+              type="text"
+              name=""
+              id="input-ing"
+              placeholder="Enter the ingredient list (use commas)"
+              autofocus
+              required
+              class="input-text"
+            />
+            <input type="submit" value="Submit" class="input-button" />
+          </form>
+          <div class="hint">Example: popcorn,salt,pepper</div>
+        </div>
+        <div id="recipe-text" class="hidden"></div>
       </main>
       <footer>
         This project was coded by
